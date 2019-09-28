@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">MiLi Pictures</string>
+
+    <!-- MENU / FRAGMENT NAMES -->
+    <string name="menu_home">Domov</string>
+    <string name="menu_calendar">Kalendár</string>
+    <string name="menu_orders">Objednávky</string>
+    <string name="menu_portfolio">Portfolio</string>
+    <string name="menu_contact">Kontakt</string>
+    <string name="menu_settings">Nastavenia</string>
+
+    <!-- CONTACT FRAGMENT-->
+    <string name="contact_call">Zavolaj:</string>
+    <string name="contact_email">E-mail:</string>
+    <string name="contact_web">Web:</string>
+    <string name="contact_facebook">Facebook:</string>
+    <string name="contact_instagram">Instagram:</string>
+    <!-- contact values -->
+    <string name="contact_value_phone_number">0911 027 684</string>
+    <string name="contact_value_email">linda@milipictures.sk</string>
+    <string name="contact_value_web">www.milipictures.sk</string>
+    <string name="contact_value_facebook">*TODO*</string>
+    <string name="contact_value_instagram">*TODO*</string>
+
+    <!-- ORDERS -->
+    <string name="order_name">Meno*</string>
+    <string name="order_email">E-mail*</string>
+    <string name="order_phone_number">Telefónne číslo</string>
+    <string name="order_photos_type">O aké fotenie máte záujem</string>
+    <string name="order_message">Vaša správa*</string>
+    <string name="order_send">Odoslať</string>
+</resources>

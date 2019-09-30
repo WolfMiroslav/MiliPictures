@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="horizontal"
-    tools:context=".MainActivity">
+    tools:context=".ui.order.OrderFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -77,7 +77,7 @@
                 android:id="@+id/orderMessage"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="text"
+                android:inputType="textMultiLine"
                 android:hint="@string/order_message"/>
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -88,4 +88,4 @@
             android:text="@string/order_send"
             style="@style/formButton"/>
     </LinearLayout>
-</LinearLayout>
+</ScrollView>

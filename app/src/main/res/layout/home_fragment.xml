@@ -1,11 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal"
-    tools:context=".MainActivity">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.home.HomeFragment">
 
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/under_reconstruction_animation"
+        android:layout_width="match_parent"
+        android:layout_height="175dp"
+        android:scaleType="fitCenter"
+        android:layout_centerInParent="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_autoPlay="false"
+        app:lottie_fileName="animations/under_reconstruction_animation.json"
+        app:lottie_loop="false" />
 
-</LinearLayout>
+    <TextView
+        android:id="@+id/under_reconstruction_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/under_reconstruction_animation"
+        android:text="@string/under_reconstruction"
+        android:drawableLeft="@drawable/round_warning_24"
+        android:drawableStart="@drawable/round_warning_24"
+        android:drawablePadding="5dp"
+        style="@style/underReconstructionText"/>
+
+</RelativeLayout>

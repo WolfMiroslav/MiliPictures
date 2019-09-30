@@ -4,7 +4,7 @@
     <!-- MENU / FRAGMENT NAMES -->
     <string name="menu_home">Domov</string>
     <string name="menu_calendar">Kalendár</string>
-    <string name="menu_orders">Objednávky</string>
+    <string name="menu_order">Objednávka</string>
     <string name="menu_portfolio">Portfolio</string>
     <string name="menu_contact">Kontakt</string>
     <string name="menu_settings">Nastavenia</string>
@@ -19,7 +19,7 @@
     <string name="contact_value_phone_number">0911 027 684</string>
     <string name="contact_value_email">linda@milipictures.sk</string>
     <string name="contact_value_web">www.milipictures.sk</string>
-    <string name="contact_value_facebook">*TODO*</string>
+    <string name="contact_value_facebook">www.facebook.com/milipicturesBA/</string>
     <string name="contact_value_instagram">*TODO*</string>
 
     <!-- ORDERS -->
@@ -29,4 +29,8 @@
     <string name="order_photos_type">O aké fotenie máte záujem</string>
     <string name="order_message">Vaša správa*</string>
     <string name="order_send">Odoslať</string>
+
+    <!-- OTHER -->
+    <string name="under_reconstruction">Under reconstruction…</string>
+
 </resources>

@@ -4,63 +4,80 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal"
-    tools:context=".MainActivity">
+    android:orientation="vertical"
+    tools:context=".ui.home.HomeFragment">
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
-
+        android:orientation="horizontal">
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="120dp"
             android:layout_height="wrap_content"
             android:text="@string/contact_call"
             android:textStyle="bold"
-            android:drawablePadding="10dp"
             android:drawableLeft="@drawable/round_call_24"
             android:drawableStart="@drawable/round_call_24"
             style="@style/ContactTextStyle" />
-
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/contact_email"
-            android:textStyle="bold"
-            android:drawablePadding="10dp"
-            android:drawableLeft="@drawable/round_email_24"
-            android:drawableStart="@drawable/round_email_24"
-            style="@style/ContactTextStyle" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/contact_web"
-            android:textStyle="bold"
-            android:drawablePadding="10dp"
-            android:drawableLeft="@drawable/round_web_24"
-            android:drawableStart="@drawable/round_web_24"
+            android:text="@string/contact_value_phone_number"
             style="@style/ContactTextStyle" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
-
+        android:orientation="horizontal">
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="120dp"
             android:layout_height="wrap_content"
-            android:text="@string/contact_value_phone_number"
+            android:text="@string/contact_email"
+            android:textStyle="bold"
+            android:drawableLeft="@drawable/round_email_24"
+            android:drawableStart="@drawable/round_email_24"
             style="@style/ContactTextStyle" />
-
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/contact_value_email"
             android:textColor="@color/linksColor"
             style="@style/ContactTextStyle" />
+    </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="@string/contact_facebook"
+            android:textStyle="bold"
+            android:drawableLeft="@drawable/round_web_24"
+            android:drawableStart="@drawable/round_web_24"
+            style="@style/ContactTextStyle" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/contact_value_facebook"
+            android:textColor="@color/linksColor"
+            style="@style/ContactTextStyle" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="@string/contact_web"
+            android:textStyle="bold"
+            android:drawableLeft="@drawable/round_web_24"
+            android:drawableStart="@drawable/round_web_24"
+            style="@style/ContactTextStyle" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

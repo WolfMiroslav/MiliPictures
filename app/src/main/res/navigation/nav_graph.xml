@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.app.milipictures.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/home_fragment" />
+    <fragment
+        android:id="@+id/orderFragment"
+        android:name="com.app.milipictures.ui.order.OrderFragment"
+        android:label="@string/menu_order"
+        tools:layout="@layout/order_fragment" />
+    <fragment
+        android:id="@+id/contactFragment"
+        android:name="com.app.milipictures.ui.contact.ContactFragment"
+        android:label="@string/menu_contact"
+        tools:layout="@layout/contact_fragment" />
+
+</navigation>

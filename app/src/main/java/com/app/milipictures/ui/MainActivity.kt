@@ -1,29 +1,38 @@
 package com.app.milipictures.ui
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.ActionBarDrawerToggle
+import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.Navigation
-import androidx.navigation.ui.NavigationUI
+import androidx.navigation.ui.setupWithNavController
 import com.app.milipictures.R
 import kotlinx.android.synthetic.main.main_activity.*
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity()/*, NavigationView.OnNavigationItemSelectedListener*/ {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.main_activity)
-
-        setSupportActionBar(toolbar)
-
-        val navigationController = Navigation.findNavController(this, R.id.fragment)
-        NavigationUI.setupWithNavController(navigationView, navigationController)
-        NavigationUI.setupActionBarWithNavController(this, navigationController, homeDrawerLayout)
+        setupToolbar()
+        setupNavigationDrawer()
     }
 
-    override fun onSupportNavigateUp(): Boolean {
-        return NavigationUI.navigateUp(
-            Navigation.findNavController(this, R.id.fragment),
-            homeDrawerLayout
-        )
+    private fun setupToolbar() {
+        toolbar.title = resources.getString(R.string.app_name)
+        setSupportActionBar(toolbar)
+    }
+
+    private fun setupNavigationDrawer() {
+        val actionBarDrawerToggle = object : ActionBarDrawerToggle(
+            this,
+            drawer_layout,
+            toolbar,
+            R.string.open_drawer,
+            R.string.close_drawer){}
+
+        drawer_layout.addDrawerListener(actionBarDrawerToggle)
+        actionBarDrawerToggle.syncState()
+        val navController = Navigation.findNavController(this, R.id.fragment)
+        navigation_view.setupWithNavController(navController)
     }
 }

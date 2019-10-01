@@ -1,19 +1,47 @@
-// Top-level build file where you can add configuration options common to all sub-projects/modules.
 
 buildscript {
-    ext.kotlin_version = '1.3.50'
+    ext {
+        // SDK version
+        minSdkVersion = 19
+        compileSdkVersion = 29
+        targetSdkVersion = 29
+
+        // Build tools
+        buildToolsVersion = '29.0.0'
+
+        // App version
+        versionCode = 1
+        versionName = '1.0'
+
+        // app dependencies
+        kotlinVersion = '1.3.50'
+        appcompatVersion = '1.1.0'
+        constraintLayoutVersion = '1.1.3'
+        gsonConverterVersion = '2.6.2'
+        coreKtxVersion = '1.1.0'
+        kodeinVersion = '6.3.3'
+        coroutinesVersion = '1.3.0'
+        roomVersion = '2.2.0-rc01'
+        navigationVersion = '2.2.0-alpha03'
+        legacySupportVersion = '1.0.0'
+        lifecycleExtensionsVersion = '2.1.0'
+        lottieVersion = '3.0.7'
+        materialVersion = '1.1.0-alpha10'
+        espressoCoreVersion = '3.2.0'
+        junitVersion = '4.12'
+        testRunnerVersion = '1.2.0'
+    }
     repositories {
         google()
         jcenter()
-        
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:3.5.0'
-        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:${kotlinVersion}"
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
 
-        //Android Navigation Safe Args Classpath
+        // Android Navigation Safe Args Classpath
         classpath "androidx.navigation:navigation-safe-args-gradle-plugin:2.2.0-alpha03"
     }
 }
@@ -22,7 +50,6 @@ allprojects {
     repositories {
         google()
         jcenter()
-        
     }
 }
 

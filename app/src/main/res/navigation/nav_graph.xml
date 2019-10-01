@@ -3,20 +3,20 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/homeFragment">
+    app:startDestination="@id/nav_item_home">
 
     <fragment
-        android:id="@+id/homeFragment"
+        android:id="@+id/nav_item_home"
         android:name="com.app.milipictures.ui.home.HomeFragment"
         android:label="@string/menu_home"
         tools:layout="@layout/home_fragment" />
     <fragment
-        android:id="@+id/orderFragment"
+        android:id="@+id/nav_item_order"
         android:name="com.app.milipictures.ui.order.OrderFragment"
         android:label="@string/menu_order"
         tools:layout="@layout/order_fragment" />
     <fragment
-        android:id="@+id/contactFragment"
+        android:id="@+id/nav_item_contact"
         android:name="com.app.milipictures.ui.contact.ContactFragment"
         android:label="@string/menu_contact"
         tools:layout="@layout/contact_fragment" />

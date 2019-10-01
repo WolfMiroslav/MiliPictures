@@ -32,5 +32,7 @@
 
     <!-- OTHER -->
     <string name="under_reconstruction">Under reconstruction…</string>
+    <string name="open_drawer">Otvor</string>
+    <string name="close_drawer">Zatvor</string>
 
 </resources>

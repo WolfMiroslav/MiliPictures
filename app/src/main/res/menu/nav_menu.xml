@@ -3,18 +3,18 @@
     <group android:checkableBehavior="single">
         <item
             android:title="@string/menu_home"
-            android:id="@+id/homeFragment"
+            android:id="@+id/nav_item_home"
             android:checked="true"
             />
 
         <item
             android:title="@string/menu_order"
-            android:id="@+id/orderFragment"
+            android:id="@+id/nav_item_order"
             />
 
         <item
             android:title="@string/menu_contact"
-            android:id="@+id/contactFragment"
+            android:id="@+id/nav_item_contact"
             />
     </group>
 </menu>

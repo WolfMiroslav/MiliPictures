@@ -30,6 +30,7 @@ buildscript {
         espressoCoreVersion = '3.2.0'
         junitVersion = '4.12'
         testRunnerVersion = '1.2.0'
+        timberVersion = "4.7.1"
     }
     repositories {
         google()

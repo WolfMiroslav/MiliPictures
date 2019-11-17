@@ -4,6 +4,8 @@
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
 
+    <color name="colorAppBackground">#292929</color>
+
     <color name="linksColor">#FF0E1E86</color>
     <color name="black">#000000</color>
 </resources>

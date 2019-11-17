@@ -81,4 +81,7 @@ dependencies {
 
     // Lottie
     implementation "com.airbnb.android:lottie:${lottieVersion}"
+
+    // Logs
+    implementation "com.jakewharton.timber:timber:${timberVersion}"
 }

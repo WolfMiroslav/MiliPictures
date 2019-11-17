@@ -59,15 +59,16 @@ dependencies {
     implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:${coroutinesVersion}"
 
     //ViewModel and LiveData
-    implementation "androidx.lifecycle:lifecycle-extensions:${lifecycleExtensionsVersion}"
-    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:${lifecycleExtensionsVersion}"
+    implementation "androidx.lifecycle:lifecycle-extensions:${lifecycleVersion}"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:${lifecycleVersion}"
 
     // Material Design
     implementation "com.google.android.material:material:${materialVersion}"
 
-    // Kodein Dependency Injection
-    implementation "org.kodein.di:kodein-di-generic-jvm:${kodeinVersion}"
-    implementation "org.kodein.di:kodein-di-framework-android-x:${kodeinVersion}"
+    // Koin Dependency Injection
+    implementation "org.koin:koin-android:${koinVersion}"
+    implementation "org.koin:koin-androidx-scope:${koinVersion}"
+    implementation "org.koin:koin-androidx-viewmodel:${koinVersion}"
 
     // Android Room
     implementation "androidx.room:room-runtime:${roomVersion}"
